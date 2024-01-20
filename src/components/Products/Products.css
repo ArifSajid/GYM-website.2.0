@@ -1,0 +1,122 @@
+.product-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 16px;
+}
+.section-header h3 {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Homemade Apple';
+    text-align: center;
+    color:#2554D7;
+}
+
+.section-header h2 {
+    font-size: 56px;
+    font-weight: 700;
+    font-family: 'Rajdhani';
+    text-align: center;
+    color: #040F16;
+}
+.section-context {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+.section-context p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Open Sans';
+    text-align: center;
+    color: #7B7D88;
+}
+
+.product-container {
+
+    width: 80%; 
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4,1fr);
+}
+@media only screen and (max-width:1056px) {
+    .product-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media only screen and (max-width:774px) {
+    .product-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media only screen and (max-width:509px) {
+    .product-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+.product-container p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Rajdhani';
+}
+
+/* .product-item {
+    width: 23%;
+    text-align: center;
+    margin-bottom: 30px;
+} */
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.product-price {
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+}
+.product-item:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+.product-price span {
+    color: #D47969;
+}
+
+.btn-product {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 20px 45px;
+    border-radius: 5px;
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.btn-product:hover {
+    background-color: #000000;
+    color: #ffffff;
+    transition: 0.4s ease;
+}

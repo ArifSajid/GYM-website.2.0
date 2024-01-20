@@ -1,0 +1,17 @@
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap:20px;
+    padding: 20px 80px;
+    z-index: 999;
+}
+@media only screen and (max-width:782px) {
+    #header{
+        flex-direction: column;
+    }
+    #navbar-items li {
+        margin: 0 5px;
+    }
+}

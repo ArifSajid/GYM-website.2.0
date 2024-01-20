@@ -1,0 +1,83 @@
+#hero-banner {
+    display: flex;
+    height: 900px;
+    width: 100%;
+}
+
+.hero-image {
+    flex: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), transparent);
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    margin-top: 95px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-container h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    font-family: 'Rajdhani';
+}
+
+.hero-image1 {
+    background-image: url(images/banner2.png);
+}
+
+.hero-image2 {
+    background-image: url(images/banner1.png);
+}
+
+.hero-image3 {
+    background-image: url(images/banner3.png);
+}
+
+.hero-image4 {
+    background-image: url(images/banner4.png);
+}
+
+.btn {
+    background-color: #2554D7;
+    color: rgb(255, 255, 255);
+    padding: 20px 45px;
+    border-radius: 5px;
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+@media only screen and (max-width:762px) {
+    .hero-container h1 {
+        font-size: 30px;}
+}
+@media only screen and (max-width:457px) {
+    .hero-container h1 {
+        font-size: 20px;}
+}
