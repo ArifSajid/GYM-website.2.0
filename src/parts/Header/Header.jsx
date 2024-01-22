@@ -8,8 +8,8 @@ const Header = () => {
   return (
     <>
           <section id="header">
-              <div className="w-[1300px] h-[50px] relative">
-                  <div className="w-[92px] h-5 left-[1208px] top-[15px] absolute justify-center items-center gap-4 inline-flex cursor-pointer">
+              <div className="w-[1450px] h-[50px] relative">
+                  <div className="w-[92px] h-5 left-[1400px] top-[15px] absolute justify-center items-center gap-4 inline-flex cursor-pointer">
                       <div className="w-5 h-5 relative"><FiSearch /></div>
                       <div className="w-5 h-5 relative"><a href='/login'><BiUser /></a></div>
                       <div className="w-5 h-5 relative"><FiShoppingBag /></div>
