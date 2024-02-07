@@ -1,0 +1,44 @@
+/* Footer Styles */
+.footer {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .footer h2 {
+    font-family: 'Rajdhani', sans-serif;
+    color: #ffffff;
+  }
+  
+  .footer-link {
+    color: #9ca3af;
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .footer-link:hover,
+  .footer-link:focus {
+    color: #ffffff;
+  }
+  
+  input[type="email"] {
+    margin-right: -1px; /* Aligns input with button */
+    border: 1px solid #0D1F2A;
+    border-right: none;
+  }
+  
+  button {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+  }
+  
+  button:hover,
+  button:focus {
+    background-color: #3B82F6; /* Darker blue on hover/focus */
+  }
+  
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

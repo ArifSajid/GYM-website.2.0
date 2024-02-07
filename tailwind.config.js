@@ -1,9 +1,21 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{html,js}"],
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    'node_modules/preline/dist/*.js',
+  ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+        homemade: ['Homemade Apple', 'cursive'],
+        rajdhani: ['Rajdhani', 'sans-serif'],
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    require('preline/plugin'),
+    require("daisyui"),
+  ],
 }
-
